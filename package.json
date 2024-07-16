@@ -1,0 +1,20 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Learning node, express and mongoDB",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "start:prod": "set  NODE_ENV=production nodemon server.js",
+    "debug": "ndb server.js"
+  },
+  "author": "khalid alhadi",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "eslint-config-wesbos": "^4.0.1",
+    "express": "^4.19.2",
+    "mongoose": "^5.13.22",
+    "morgan": "^1.10.0"
+  }
+}
