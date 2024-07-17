@@ -22,7 +22,7 @@ app.use(express.json());
 
 // Middleware for routes
 app.use('/api/v1/tours', trourRoute);
-// app.use('/api/v1/users', usersRoute);
+app.use('/api/v1/users', usersRoute);
 
 app.all('*', (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404)) 
